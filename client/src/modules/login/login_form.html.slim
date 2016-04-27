@@ -1,0 +1,23 @@
+form name="form" novalidate="true"
+  h2 ng-bind="$ctrl.email"
+  .form-group
+    form-input(
+      field-name="Email"
+      field-value="$ctrl.email"
+      on-enter="submit(form)"
+      is-required="true"
+      form="form"
+    )
+
+  .form-group
+    form-input(
+      field-name="Password"
+      field-value="$ctrl.password"
+      field-type="password"
+      on-enter="submit(form)"
+      is-required="true"
+      form="form"
+    )
+
+  .submit-row
+    a.btn.btn-default ng-click="$ctrl.submit(form)" Login

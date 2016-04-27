@@ -1,0 +1,8 @@
+input.form-control(
+  ng-model="$ctrl.fieldValue"
+  name="{{$ctrl.fieldName}}"
+  type="{{$ctrl.fieldType}}"
+  ng-enter="{{$ctrl.onSubmit()}}"
+  ng-class="{error: $ctrl.hasError()}"
+  required="false"
+  )
